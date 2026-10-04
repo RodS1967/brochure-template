@@ -1,0 +1,248 @@
+/* Free Web Template -- licensed under the MIT License -- Copyright (c) 2026 Team RodZilla LLC (https://www.teamrodzilla.com) -- see LICENSE */
+
+:root {
+	--color-bg: #fff;
+	--color-text: #000;
+}
+
+* {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: .2s linear;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-text);
+}
+
+section {
+	padding: 2rem 7%;
+}
+
+.heading {
+	text-align: center;
+	padding-bottom: 3.5rem;
+	font-size: 4rem;
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .9rem 3rem;
+	font-size: 1.7rem;
+	color: var(--color-bg);
+	background: var(--color-text);
+	cursor: pointer;
+}
+
+.header {
+	background: var(--color-bg);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 7%;
+	border-bottom: .1rem solid var(--color-text);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header .logo img {
+	height: 6rem;
+}
+
+.header .navbar a {
+	margin: 0 1rem;
+	font-size: 1.6rem;
+	color: var(--color-text);
+}
+
+.header .icons a,
+.header .icons button {
+	color: var(--color-text);
+	background: none;
+	cursor: pointer;
+	font-size: 1.6rem;
+	margin-left: 2rem;
+}
+
+#menu-btn {
+	display: none;
+}
+
+.home {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url("_images/home.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.home .content {
+	max-width: 60rem;
+}
+
+.home .content h3 {
+	font-size: 6rem;
+}
+
+.home .content p {
+	font-size: 2rem;
+	font-weight: lighter;
+	line-height: 1.8;
+	padding: 1rem 0;
+}
+
+.about .row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.about .row .image {
+	flex: 1 1 45rem;
+}
+
+.about .row .image img {
+	width: 100%;
+}
+
+.about .row .content {
+	flex: 1 1 45rem;
+	padding: 2rem;
+}
+
+.about .row .content h3 {
+	font-size: 3rem;
+}
+
+.about .row .content p {
+	font-size: 1.6rem;
+	padding: 1rem 0;
+	line-height: 1.8;
+}
+
+.footer {
+	text-align: center;
+	border-top: .1rem solid var(--color-text);
+}
+
+.footer .share {
+	padding: 1rem 0;
+}
+
+.footer .share a {
+	display: inline-block;
+	padding: .5rem 1.5rem;
+	font-size: 1.6rem;
+	color: var(--color-text);
+	border: .1rem solid var(--color-text);
+	margin: .3rem;
+	border-radius: 5rem;
+}
+
+.footer .links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+	gap: 1rem;
+}
+
+.footer .links a {
+	padding: .7rem 2rem;
+	color: var(--color-text);
+	border: .1rem solid var(--color-text);
+	font-size: 2rem;
+}
+
+.footer .credit {
+	font-size: 1.6rem;
+	font-weight: lighter;
+	padding: 1.5rem;
+}
+
+.footer .credit a {
+	color: var(--color-text);
+	font-weight: bolder;
+}
+
+@media (max-width: 991px) {
+
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 1.5rem 2rem;
+	}
+
+	section {
+		padding: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+
+	#menu-btn {
+		display: inline-block;
+	}
+
+	.header .navbar {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background: var(--color-bg);
+		border: .1rem solid var(--color-text);
+		width: 30rem;
+		height: calc(100vh - 9.5rem);
+	}
+
+	.header .navbar.active {
+		right: 0;
+	}
+
+	.header .navbar a {
+		color: var(--color-text);
+		display: block;
+		margin: 1.5rem;
+		padding: .5rem;
+		font-size: 2rem;
+	}
+
+	.home {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.home .content h3 {
+		font-size: 4.5rem;
+	}
+
+	.home .content p {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 450px) {
+
+	html {
+		font-size: 55%;
+	}
+}
