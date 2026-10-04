@@ -64,7 +64,7 @@
 				<a href="#about">about</a>
 			</div>
 
-			<div class="credit">created by <a href="http://www.teamrodzilla.com">Team RodZilla LLC</a> | all rights reserved</div>
+			<div class="credit">created by <a href="http://www.teamrodzilla.com">Team RodZilla LLC</a> | <a href="LICENSE" target="_blank">MIT Licensed</a></div>
 		</section>
 
 		<script src="script.js"></script>
